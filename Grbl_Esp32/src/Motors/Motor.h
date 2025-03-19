@@ -2,8 +2,8 @@
 
 /*
     Motor.h
-    Header file for Motor Classes
-    Here is the hierarchy
+    Arquivo de cabeçalho para as classes de motor
+    Aqui está a hierarquia:
         Motor
             Nullmotor
             StandardStepper
@@ -11,11 +11,11 @@
             Unipolar
             RC Servo
 
-    These are for motors coordinated by Grbl_ESP32
-    See motorClass.cpp for more details
+    Estes são para motores coordenados pelo Grbl_ESP32
+    Consulte motorClass.cpp para mais detalhes
 
-    Part of Grbl_ESP32
-    2020 -	Bart Dring
+    Parte do Grbl_ESP32
+    2020 - Bart Dring
 
     Grbl is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

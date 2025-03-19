@@ -1,14 +1,13 @@
 /*
     Dynamixel2.cpp
+    Isso permite que um servo Dynamixel seja usado como qualquer outro motor. 
+    Servos têm limitações de movimento e velocidade, portanto, é necessário respeitar isso.
 
-    This allows an Dynamixel sero to be used like any other motor. Servos
-    do have limitation in travel and speed, so you do need to respect that.
+    Protocolo 2
 
-    Protocol 2
+    Parte do Grbl_ESP32
 
-    Part of Grbl_ESP32
-
-    2020 -	Bart Dring
+    2020 - Bart Dring
 
     https://emanual.robotis.com/docs/en/dxl/protocol2/
 

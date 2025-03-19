@@ -3,43 +3,43 @@
 
 /*
     test_drive.h
-    Part of Grbl_ESP32
+    Parte do Grbl_ESP32
 
-    Pin assignments (or lack thereof) for testing Grbl_ESP32.
+    Atribuições de pinos (ou a ausência delas) para testar o Grbl_ESP32.
 
-    It creates a basic 3 axis machine without actually driving
-    I/O pins.  Grbl will report that axes are moving, but no physical
-    motor motion will occur.
+    Ele cria uma máquina básica de 3 eixos sem realmente acionar 
+    os pinos de E/S. O Grbl irá relatar que os eixos estão se movendo, 
+    mas nenhum movimento físico do motor ocorrerá.
 
-    This can be uploaded to an unattached ESP32 or attached to
-    unknown hardware with no risk of pins trying to output signals
-    into a short, etc that could dmamge the ESP32
+    Isso pode ser carregado em um ESP32 não conectado ou conectado 
+    a um hardware desconhecido, sem risco de os pinos tentarem 
+    emitir sinais que possam causar um curto-circuito ou outros danos ao ESP32.
 
-    It can also be used to get the basic program running so OTA
-    (over the air) firmware loading can be done.
+    Também pode ser usado para executar o programa básico, permitindo
+    o carregamento de firmware OTA (over-the-air).
 
     2018    - Bart Dring
     2020    - Mitch Bradley
 
-    Grbl_ESP32 is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
+    O Grbl_ESP32 é um software livre: você pode redistribuí-lo e/ou modificá-lo
+    sob os termos da Licença Pública Geral GNU conforme publicada pela 
+    Free Software Foundation, seja a versão 3 da Licença ou 
+    (a seu critério) qualquer versão posterior.
 
-    Grbl is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+    O Grbl é distribuído na esperança de ser útil, 
+    mas SEM NENHUMA GARANTIA; nem mesmo a garantia implícita de 
+    COMERCIABILIDADE ou ADEQUAÇÃO A UM PROPÓSITO ESPECÍFICO. Consulte a 
+    Licença Pública Geral GNU para mais detalhes.
 
-    You should have received a copy of the GNU General Public License
-    along with Grbl_ESP32.  If not, see <http://www.gnu.org/licenses/>.
+    Você deve ter recebido uma cópia da Licença Pública Geral GNU 
+    junto com o Grbl_ESP32. Caso contrário, veja <http://www.gnu.org/licenses/>.
 */
 
 #define MACHINE_NAME "Test Drive - Demo Only No I/O!"
 
 
 #define N_AXIS 3
-// This cannot use homing because there are no switches
+// Isso não pode usar homing porque não há interruptores.
 #ifdef DEFAULT_HOMING_CYCLE_0
     #undef DEFAULT_HOMING_CYCLE_0
 #endif
@@ -51,5 +51,5 @@
 #define SPINDLE_TYPE    SpindleType::NONE
 
 #ifdef USE_RMT_STEPS
-#undef USE_RMT_STEPS  // Suppress unused variable warning
+#undef USE_RMT_STEPS  // Suprimir aviso de variável não utilizada
 #endif

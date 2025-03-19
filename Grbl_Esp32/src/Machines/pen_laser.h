@@ -2,18 +2,18 @@
 // clang-format off
 
 /*
-        pen_laser.h
-        Part of Grbl_ESP32
+                pen_laser.h  
+        Parte do Grbl_ESP32  
 
-        Pen assignments for the Buildlog.net pen laser controller V1 & V2
+        Atribuições de pinos para o controlador de laser de caneta Buildlog.net V1 e V2  
 
-        For pen mode be sure to uncomment #define USE_PEN_SERVO in config.h
-        For solenoid  mode be sure to uncomment #define USE_PEN_SERVO in config.h
-        For laser mode, you do not need to change anything
-        Note: You can use all 3 modes at the same time if you want
+        Para o modo de caneta, certifique-se de descomentar #define USE_PEN_SERVO em config.h  
+        Para o modo de solenóide, certifique-se de descomentar #define USE_PEN_SERVO em config.h  
+        Para o modo laser, você não precisa alterar nada  
+        Nota: Você pode usar os três modos ao mesmo tempo, se desejar  
 
-        2019    - Bart Dring
-        2020    - Mitch Bradley
+        2019 - Bart Dring  
+        2020 - Mitch Bradley  
 
         Grbl_ESP32 is free software: you can redistribute it and/or modify
         it under the terms of the GNU General Public License as published by

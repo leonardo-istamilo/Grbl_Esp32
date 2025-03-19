@@ -1,13 +1,13 @@
 #pragma once
 
 /*
-  CoolantControl.h - spindle control methods
-  Part of Grbl
+  CoolantControl.h - métodos de controle de spindle
+  Parte do Grbl
 
-  Copyright (c) 2012-2016 Sungeun K. Jeon for Gnea Research LLC
+  Copyright (c) 2012-2016 Sungeun K. Jeon para Gnea Research LLC
 
-	2018 -	Bart Dring This file was modifed for use on the ESP32
-					CPU. Do not use this with Grbl for atMega328P
+  2018 - Bart Dring Este arquivo foi modificado para uso no
+          processador ESP32. Não use isto com o Grbl para atMega328P
 
   Grbl is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

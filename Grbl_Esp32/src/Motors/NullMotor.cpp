@@ -1,11 +1,11 @@
 /*
     NullMotor.cpp
 
-    This is a fake motor that does nothing.
+    Este é um motor fictício que não faz nada.
 
-    Part of Grbl_ESP32
+    Parte do Grbl_ESP32
 
-    2020 -	Bart Dring
+    2020 - Bart Dring
 
     Grbl is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -22,7 +22,5 @@
 #include "NullMotor.h"
 
 namespace Motors {
-   Nullmotor::Nullmotor(uint8_t axis_index) :
-       Motor(axis_index)
-   {}
+    Nullmotor::Nullmotor(uint8_t axis_index) : Motor(axis_index) {}
 }

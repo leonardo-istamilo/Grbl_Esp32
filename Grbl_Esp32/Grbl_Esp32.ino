@@ -1,10 +1,11 @@
 /*
-  Grbl_ESP32.ino - Header for system level commands and real-time processes
-  Part of Grbl
-  Copyright (c) 2014-2016 Sungeun K. Jeon for Gnea Research LLC
+ Grbl_ESP32.ino - Cabeçalho para comandos de nível de sistema e processos em tempo real  
+Parte do Grbl  
+Copyright (c) 2014-2016 Sungeun K. Jeon para Gnea Research LLC  
 
-	2018 -	Bart Dring This file was modified for use on the ESP32
-					CPU. Do not use this with Grbl for atMega328P
+2018 - Bart Dring Este arquivo foi modificado para uso no  
+          processador ESP32. Não use este arquivo com o Grbl para atMega328P  
+
 
   Grbl is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by

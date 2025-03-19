@@ -7,11 +7,12 @@
 
     2020-12-29 B. Dring
 
-    This is a machine definition file to use the FYSTEC E4 3D Printer controller
-    This is a 4 motor controller. This is setup for XYZA, but XYYZ, could also be used.
-    There are 5 inputs
-    The controller has outputs for a Fan, Hotbed and Extruder. There are mapped to
-    spindle, mist and flood coolant to drive an external relay.
+    Este é um arquivo de definição de máquina para usar o controlador de impressora 3D FYSTEC E4.  
+    Este é um controlador de 4 motores. Está configurado para XYZA, mas também pode ser usado como XYYZ.  
+    Há 5 entradas.  
+    O controlador possui saídas para um ventilador, uma mesa aquecida (Hotbed) e um extrusor. Essas saídas estão mapeadas para  
+    spindle (spindle), mist (neblina) e flood coolant (refrigeração por inundação) para acionar um relé externo.
+
 
     Grbl_ESP32 is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by

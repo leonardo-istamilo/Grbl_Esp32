@@ -1,44 +1,45 @@
 #pragma once
 
-// This file is where you choose the machine type, by including
-// one or more machine definition files as described below.
+// Este arquivo é onde você escolhe o tipo de máquina, incluindo
+// um ou mais arquivos de definição de máquina conforme descrito abaixo.
 
 #ifndef MACHINE_FILENAME
 
-// !!! For initial testing, start with test_drive.h which disables
-// all I/O pins
-// #include "Machines/atari_1020.h"
-#    include "Machines/test_drive.h"
+// !!! Para testes iniciais, comece com test_drive.h, que desativa
+// todos os pinos de E/S
+#include "Machines/laser_cutter.h"
+//#    include "Machines/test_drive.h"
 
-// !!! For actual use, change the line above to select a board
-// from Machines/, for example:
+// !!! Para uso real, altere a linha acima para selecionar uma placa
+// de Machines/, por exemplo:
 // #include "Machines/3axis_v4.h"
 
-// === OEM Single File Configuration Option
-// OEMs that wish to publish source code that is configured for a
-// specific machine may put all of their configuration definitions
-// directly in this file, without including any other file above.
+// === Opção de Configuração de Arquivo Único para OEM
+// Fabricantes (OEMs) que desejam publicar o código-fonte configurado
+// para uma máquina específica podem colocar todas as definições de configuração
+// diretamente neste arquivo, sem incluir nenhum outro arquivo acima.
 
 #else
 
-// By using the external environment to define MACHINE_FILENAME,
-// a configuration can be chosen without editing this file.
-// That is useful for automated testing scripts.
+// Usando o ambiente externo para definir MACHINE_FILENAME,
+// uma configuração pode ser escolhida sem editar este arquivo.
+// Isso é útil para scripts de testes automatizados.
 //
-// For example, when using the platformio compilation environment
-// under Linux, you could issue the following command line:
+// Por exemplo, ao usar o ambiente de compilação platformio
+// no Linux, você poderia executar o seguinte comando:
 //   PLATFORMIO_BUILD_FLAGS=-DMACHINE_FILENAME=3axis_v4.h platformio run
 //
-// Under Windows, using PowerShell, the command would be:
+// No Windows, usando PowerShell, o comando seria:
 //   $env:PLATFORMIO_BUILD_FLAGS='-DMACHINE_FILENAME=3axis_v4.h'; platformio run
 //
-// When using the Arduino IDE, there is no easy way to pass variables
-// to the compiler, so this feature is not useful for Arduino.
+// Ao usar o Arduino IDE, não há uma maneira fácil de passar variáveis
+// para o compilador, então esse recurso não é útil para Arduino.
 //
-// MACHINE_FILENAME must not include the Machines/ path prefix; it is
-// supplied automatically.
-
-// MACHINE_PATHNAME_QUOTED constructs a path that is suitable for #include
+// MACHINE_FILENAME não deve incluir o prefixo do caminho Machines/;
+// ele é fornecido automaticamente.
+//
+// MACHINE_PATHNAME_QUOTED constrói um caminho adequado para
+//#include
 #    define MACHINE_PATHNAME_QUOTED(name) <src/Machines/name>
 
 #    include MACHINE_PATHNAME_QUOTED(MACHINE_FILENAME)
